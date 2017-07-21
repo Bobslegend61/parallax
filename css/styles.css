@@ -1,0 +1,134 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+}
+
+#div1, #div2, #div3, #div4 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+}
+
+#div1 {
+    background-image: url("../images/img2.jpeg");
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#div1 #button{
+    background-color: mintcream;
+    padding: 20px;
+    display: inline-block;
+    /*vertical-align: middle;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    letter-spacing: 0.5em;
+}
+
+@media screen and (max-width: 900px) {
+    #div1, #div2, #div3, #div4 {
+        background-attachment: scroll;
+    }
+    #div1 #button {
+        letter-spacing: 0.1em;
+        font-size: 1em;
+        padding: 10px;
+    }
+}
+
+
+#div2 {
+    background-image: url("../images/img1.jpeg");
+    height: 300px;
+    width: 100%;
+}
+
+#div3 {
+    background-image: url("../images/img3.jpeg");
+    height: 400px;
+    width: 100%;
+}
+
+#div4 {
+    background-image: url("../images/img4.jpeg");
+    height: 100px;
+    width: 100%;
+}
+
+#cher1 {
+    background-color: mintcream;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 80px 50px;
+}
+
+#cher2 {
+    background-color: grey;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 120px 50px;
+    color: white;
+    line-height: 1.5em;
+}
+
+#cher3 {
+    background-color: mintcream;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 80px 50px;
+    text-align: justify;
+}
+
+#header{
+    padding: 20px 20px;
+    opacity: 0.5;
+}
+
+a{
+    text-decoration: none;
+    color: mintcream;
+}
+
+a:hover{
+    color: grey;
+}
+
+li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 1.2em;
+    font-weight: 400px;
+}
+
+.flex-container{
+    display: -webkit-flex;
+    display: flex;
+    background-color: #000;
+}
+
+.item-1{
+    flex: 2;
+    color: mintcream;
+    font-size: 1.5em;
+    letter-spacing: .4em;
+    font-weight: 500px;
+}
